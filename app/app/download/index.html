@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>应用下载</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name='apple-itunes-app' content='app-id=1072318836'>
+    <script src="//cdn.bootcss.com/mobile-detect/1.3.1/mobile-detect.js"></script>
+</head>
+<body>
+正在跳转
+</body>
+<script type="text/javascript">
+    var md = new MobileDetect(window.navigator.userAgent);
+    if (md.is('iOS')) {
+        location.href="http://itunes.apple.com/app/id1072318836";
+        if (/micromessenger/.test(navigator.userAgent.toLowerCase())) {
+            location.href="http://a.app.qq.com/o/simple.jsp?pkgname=cn.com.kaikaibao.app";
+        }
+    } else if (md.is('AndroidOS')) {
+        location.href="/kaikaibao.apk";
+        if (/micromessenger/.test(navigator.userAgent.toLowerCase())) {
+            location.href="http://a.app.qq.com/o/simple.jsp?pkgname=cn.com.kaikaibao.app";
+        }
+    } else if (md.is('mobile')) {
+        location.href="https://m.kaikaibao.com.cn";
+    } else {
+        location.href="/";
+    }
+</script>
+</html>

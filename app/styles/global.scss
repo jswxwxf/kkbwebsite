@@ -1,0 +1,26 @@
+@import "styles/variables";
+@import "styles/mixins";
+@import "styles/media";
+@import "styles/icons";
+
+@import "bower_components/angular-dialog-service/dist/dialogs.css";
+
+html * {
+  font-family: "PingFang SC Light", "Helvetica Neue Light", "Helvetica Light", "Arial", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+// for ScrollSpy
+body {
+  position: relative;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -50px;
+  visibility: hidden;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: white;
+}

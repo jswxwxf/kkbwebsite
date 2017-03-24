@@ -1,0 +1,76 @@
+#template {
+
+  .lcb-navbar-top {
+    background-color: rgba(255,255,255,0.1);
+    a {
+      color: white;
+      &:focus, &:hover {
+        color: black;
+      }
+    }
+    a.navbar-brand {
+      color: white;
+    }
+  }
+
+  .navbar-brand img {
+    height: 25px;
+    margin-top: -3px;
+  }
+
+  > .container {
+    padding-top: 70px;
+  }
+
+  // Sticky footer styles
+  #footer {
+
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    padding-top: 20px;
+    background-color: #26293A;
+    color: white;
+
+    h4 {
+      margin-bottom: 20px;
+    }
+
+    #contactus {
+
+      #phone {
+        img {
+          height: 35px;
+          margin-top: 10px;
+          margin-right: 10px;
+        }
+        font-size: 25px;
+        span {
+          display: block;
+          font-size: 8pt;
+        }
+      }
+
+      img {
+        height: 14px;
+        margin-right: 10px;
+        margin-top: -4px;
+      }
+
+      a {
+        color: white;
+      }
+
+    }
+
+
+    #copyright {
+      padding: 35px 0;
+      margin-top: 40px;
+      border-top: 1px solid #484E66;
+      width: 100%;
+    }
+
+  }
+
+}
+

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>开开保</title>
+  <meta name="description" content="">
+  <base href="/" />
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="stylesheet" href="dist/bootstrap.css">
+  <link rel="stylesheet" href="dist/font-awesome.css">
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- endbuild -->
+  <link rel="stylesheet" href="dist/all.css">
+</head>
+<body ng-app="lcbapp">
+
+  <div id="template">
+    <ng-include src="'features/templates/header.html'"></ng-include>
+    <div class="container-fluid">
+      <ui-view></ui-view>
+    </div> <!-- /container -->
+    <ng-include src="'features/templates/footer.html'"></ng-include>
+  </div>
+
+  <!-- build:js dist/rt.js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-touch/angular-touch.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="bower_components/angular-translate/angular-translate.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="bower_components/angular-dialog-service/dist/dialogs.js"></script>
+  <script src="bower_components/angular-dialog-service/dist/dialogs-default-translations.js"></script>
+  <script src="bower_components/lodash/lodash.js"></script>
+  <!-- endbuild -->
+  <!-- build:js dist/vendor.js -->
+  <!-- endbuild -->
+  
+  <script src="dist/website.js"></script>
+  <script src="dist/templates.js"></script>
+
+</body>
+</html>

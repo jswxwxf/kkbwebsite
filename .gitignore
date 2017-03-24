@@ -1,0 +1,6 @@
+/node_modules
+/app/bower_components
+/.idea
+/app/dist
+/typings/index.d.ts
+/typings/globals
